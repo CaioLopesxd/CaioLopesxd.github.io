@@ -1,1 +1,4 @@
-As imagens contidas nessa pasta são as que eu teria que imitar, e o index.html é o que eu fiz, acredito que tenha maneiras melhores para fazer esse clone como usar o vw ou vh para definir o tamanho do container e ser mais responsivo, porém, durante o processo eu estava tendo alguns problemas e decidi que nesse caso era melhor usar px
+As imagens contidas nessa pasta são as que eu teria que imitar
+o index.html é o que eu fiz
+acredito que tenha maneiras melhores para fazer esse clone como usar o vw ou vh para definir o tamanho do container e ser mais responsivo
+porém, durante o processo eu estava tendo alguns problemas e decidi que nesse caso era melhor usar px
