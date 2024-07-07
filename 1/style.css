@@ -16,8 +16,8 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--White);
-    width: 400px;
-    height: 700px;
+    width: 20vw;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,8 +49,7 @@ p{
         margin-left: auto;
         margin-right: auto;
         background-color: var(--White);
-        width: 325px;
-        height: 600px;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
