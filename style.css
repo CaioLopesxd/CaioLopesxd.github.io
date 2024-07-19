@@ -12,14 +12,14 @@ html, body {
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #F4F4F9; /* Cor de fundo */
+    color: #333333; /* Cor de texto */
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #00796B, #004D40); /* Gradiente do cabeçalho */
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -42,7 +42,7 @@ header {
 }
 
 .about h2, .projects h2, .imagesContainer h2, .contact h2 {
-    border-bottom: 3px solid #6e8efb;
+    border-bottom: 3px solid #00BCD4; /* Cor de destaque */
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -53,7 +53,7 @@ header {
 }
 
 .projects ul li {
-    background: #e8e8e8;
+    background: #F5F5F5; /* Cor de fundo dos itens do projeto */
     margin: 0.5rem 0;
     padding: 1rem;
     border-radius: 8px;
@@ -61,11 +61,11 @@ header {
 }
 
 .projects ul li:hover {
-    background: #d0d0d0;
+    background: #E0E0E0; /* Cor de fundo dos itens do projeto ao passar o mouse */
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #004D40, #00796B); /* Gradiente do rodapé */
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -73,13 +73,13 @@ footer {
 }
 
 a {
-    color: #6e8efb;
+    color: #00BCD4; /* Cor de destaque */
     text-decoration: none;
-    transition:  0.3s ease;
+    transition: 0.3s ease;
 }
 
 a:hover {
-    color: #a777e3;
+    color: #00ACC1; /* Cor de destaque quando o link é sobreposto */
     text-decoration: underline;
 }
 
@@ -117,6 +117,6 @@ img {
 }
 
 .voltar:hover {
-    color: #d0d0d0;
+    color: #E0E0E0; /* Cor ao passar o mouse */
     text-decoration: none;
 }
