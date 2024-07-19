@@ -84,6 +84,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+    *{  
+        font-size: 16px;
+    }
     .container {
         width: 90%;
     }
@@ -112,8 +115,8 @@ img {
 .voltar {
     position: absolute;
     color: white;
-    left: 3%;
-    top: 34%;
+    display: flex;
+    margin-left: 5%;
 }
 
 .voltar:hover {
