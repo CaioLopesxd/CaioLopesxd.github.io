@@ -1,34 +1,122 @@
-*{
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "roboto";
-    --Lightgray: hsl(212, 45%, 89%);
-    --Grayishblue: hsl(220, 15%, 55%);
 }
-.Background{
-    background-color: rgb(25,25,25);
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
-.Main{
-    background-color: rgb(40, 40, 40);
-    width: 30vw;
-    height: 80vh;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px 10px rgb(35, 35, 35);
-}
-.Fm{
+
+header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 2rem 0;
     text-align: center;
-    color: aliceblue;
+    position: relative; /* Necessário para o posicionamento absoluto do botão "Voltar" */
 }
-a{
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about, .projects, .imagesContainer, .contact {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .projects h2, .imagesContainer h2, .contact h2 {
+    border-bottom: 3px solid #6e8efb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects ul li {
+    background: #e8e8e8;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.projects ul li:hover {
+    background: #d0d0d0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: auto; /* Faz o rodapé ficar na parte inferior da página */
+}
+
+a {
+    color: #6e8efb;
     text-decoration: none;
-    color: var(--Lightgray);
+    transition:  0.3s ease;
 }
-a:hover{
-    color: var(--Grayishblue);
+
+a:hover {
+    color: #a777e3;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .imagesContainer a {
+        flex: 1 1 calc(50% - 1rem);
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+img {
+    width: 275px;
+    border-radius: 20px;
+}
+
+.voltar {
+    position: absolute;
+    color: white;
+    left: 3%;
+    top: 34%;
+}
+
+.voltar:hover {
+    color: #d0d0d0;
+    text-decoration: none;
 }
