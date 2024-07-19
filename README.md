@@ -1,1 +1,1 @@
-Respositório onde estarei publicando meus codigos para entregar no site FrontEnd Mentor.
+Respositório onde estarei criando um portifolio e publicando meus codigos do site FrontEnd Mentor.
