@@ -7,7 +7,6 @@
     --Lightgray: hsl(212, 45%, 89%);
     --Grayishblue: hsl(220, 15%, 55%);
     --Darkblue: hsl(218, 44%, 22%);
-    font-size: 1rem;
 }
 
 #background{
@@ -15,12 +14,12 @@
 }
 
 .container{
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--White);
-    width: 20vw;
-    height: 75vh;
+    width: 20%;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,17 +34,20 @@ img{
 
 .txt{
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
 }
 
 h1{
-    margin-top: 10%;
     color: var(--Darkblue);
-    font-size: 31px;
+    font-size: 1.6rem;
 }
 
 p{
-    margin-top: 10%;
     color: var(--Grayishblue);
 }
 
