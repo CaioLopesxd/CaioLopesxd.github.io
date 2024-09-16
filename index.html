@@ -91,22 +91,23 @@
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll("#nav a");
         const indicators = document.querySelectorAll(".indicator");
-
+    
         function changeActiveLink() {
           let index = sections.length;
-
+    
           while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
-          navLinks.forEach((link) => link.classList.remove("text-slate-300"));
-          indicators.forEach((indicator) => indicator.classList.remove("w-12"));
-
-          navLinks[index].classList.add("text-slate-300");
-          indicators[index].classList.add("w-12");
+    
+          navLinks.forEach((link) => link.classList.remove("text-white")); // Remove a classe text-slate-300 dos links
+          indicators.forEach((indicator) => indicator.classList.remove("w-10"));
+    
+          navLinks[index].classList.add("text-white"); // Adiciona a classe text-slate-300 ao link ativo
+          indicators[index].classList.add("w-10");
         }
-
+    
         changeActiveLink();
         window.addEventListener("scroll", changeActiveLink);
       });
     </script>
+    
   </body>
 </html>
