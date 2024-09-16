@@ -1,40 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <title>Caio Dos Santos Lopes - Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Caio Dos Santos Lopes</h1>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Spy com Tailwind CSS</title>
+    <link href="src/output.css" rel="stylesheet" />
 
-    </header>
-    <div class="container">
-        <section class="about">
-            <h2>Sobre Mim</h2>
-            <p>Olá, meu nome é Caio Dos Santos Lopes, tenho 20 ano e estou em busca da minha primeira experiência na área. Minha jornada como desenvolvedor começou em 2022, quando fiz um curso profissionalizante de WebDesign. Nesse curso, tive contato com conceitos básicos de lógica de programação e um pouco de desenvolvimento backend com php. Atualmente, estou estudando Python, php, C++ e desenvolvimento mobile com ReactJS na UniSatc.</p>
+  </head>
+  <body class="flex justify-center items-center bg-gradient-to-r from-slate-800 to-gray-950 ">
+    <div class="w-full lg:w-8/12">
+      <!-- Sidebar -->
+      <nav>
+        <div
+          class="lg:p-20 p-12 lg:fixed lg:w-2/6 min-h-screen flex flex-col items-start justify-between ">
+          <div class="space-y-6">
+            <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Caio Dos Santos Lopes</h1>
+            <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Engenheiro da Computação em Formação</h2>
+            <p class="mt-4 max-w-xs font-semibold text-slate-500">
+              Na corrida pelo conhecimento em busca de entregar as melhores
+              soluções
+            </p>
+          </div>
+          <ul id="nav" class="space-y-2">
+            <li class="flex items-center gap-2">
+              <div
+                class="indicator w-6 border-t-2 border-gray-500 transition-width duration-300 ease-in-out"
+                id="indicator1"
+              ></div>
+              <a href="#section1" class="block py-2 text-slate-500 hover:text-slate-300"
+                >Sobre</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <div
+                class="indicator w-6 border-t-2 border-gray-500 transition-width duration-300 ease-in-out"
+                id="indicator2"
+              ></div>
+              <a href="#section2" class="block py-2 text-slate-500 hover:text-slate-300">Projetos</a>
+            </li>
+          </ul>
+
+          <div>
+
+          </div>
+          <!--Contato-->
+
+            <div class="flex space-x-2">
+              <a class="hover:bg-slate-500 p-3 rounded-full active:scale-110 transition-all duration-150 ease-in-out" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <!--linkedin ^ github v -->
+            <a class="hover:bg-slate-500 p-3 rounded-full active:scale-110 transition-all duration-150 ease-in-out"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+            </div>
+        </div>
+      </nav>
+
+      <!-- Main content -->
+      <main class="flex-1 w-full">
+        <section
+          id="section1"
+          class="0 min-h-screen flex justify-end items-center"
+        >
+          <div class=" lg:w-3/6 p-4 w-full space-y-4">
+            <h1 class="text-white font-bold text-4xl">Sobre</h1>
+            <p class="text-white">
+              Olá, meu nome é Caio Dos Santos Lopes, tenho 20 anos e estou em busca da minha primeira experiência na área. Minha jornada como desenvolvedor começou em 2022, quando fiz um curso profissionalizante de WebDesign. Nesse curso, tive contato com conceitos básicos de lógica de programação e um pouco de desenvolvimento backend com php. Atualmente, estou estudando Python, php, C++ e desenvolvimento mobile com ReactJS na UniSatc.
+            </p>
+          </div>
         </section>
-        <section class="projects">
-            <h2>Projetos</h2>
-            <ul>
-                <li><a href="Hub.html">FrontEnd Mentor</a>: Entrega das atividades do site FrontEnd Mentor.</li>
-                <li><a href="https://github.com/CaioLopesxd/CRUDphp" >CRUD com PHP PDO</a>: Um sistema simples de cadastro de cliente, capaz de Criar, Ler, Atualizar e Deletar</li>
-                <li><a href="https://github.com/CaioLopesxd/Ordem-De-Servico-RN">App OS Manager</a>: Crie seu Cadastro e comece a gerir suas Ordens de Serviço, cadastrando suas proprias OS e Clientes.</li>
-                <li><a href="https://github.com/CaioLopesxd/PythonBackEnd" >CRUD com Python Flask</a>: Um blog simples ainda em desenvolvimento</li>
-            </ul>
+        <section id="section2" class=" min-h-screen flex justify-end">
+          <div class=" lg:w-3/6 p-4 w-full">
+            <h1 class="text-4xl">Projetos</h1>
+            <p>
+              Aqui estão alguns dos meus projetos mais recentes:
+            </p>
+            <div>
+              <h2 class="text-2xl">
+                CRUD de Usuários com PHP
+              </h2>
+              <p>
+                Um CRUD de usuários feito com PHP e MySQL.
+              </p>
+              <div>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="contact">
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato comigo através do meu <a href="https://www.linkedin.com/in/caio-lopes-4b4525207/">LinkedIn</a> ou enviar um e-mail para <a href="#">r9506505@gmail.com</a>.</p>
-        </section>
+      </main>
     </div>
-    <footer>
-        <p>&copy; 2024 Caio Dos Santos Lopes</p>
-    </footer>
-    <script src="script.js">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("#nav a");
+        const indicators = document.querySelectorAll(".indicator");
+
+        function changeActiveLink() {
+          let index = sections.length;
+
+          while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+          navLinks.forEach((link) => link.classList.remove("text-slate-300"));
+          indicators.forEach((indicator) => indicator.classList.remove("w-12"));
+
+          navLinks[index].classList.add("text-slate-300");
+          indicators[index].classList.add("w-12");
+        }
+
+        changeActiveLink();
+        window.addEventListener("scroll", changeActiveLink);
+      });
     </script>
-</body>
+  </body>
 </html>
